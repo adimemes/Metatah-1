@@ -69,8 +69,8 @@ function addUcapanToList(nama, ucapan, kehadiran) {
   ucapanElement.innerHTML = `
       <div class="space-y-2">
         <div class="flex items-center justify-between mx-8">
-          <h3 class="font-semibold text-white">${nama}</h3>
-          <span class="text-sm text-white italic">
+          <h3 class="font-semibold text-[#8D1F22]">${nama}</h3>
+          <span class="text-sm text-[#8D1F22] italic">
             ${
               kehadiran === "Hadir"
                 ? "Hadir"
@@ -117,8 +117,8 @@ function fetchComments() {
         ucapanElement.innerHTML = `
         <div class="space-y-2">
             <div class="flex items-center justify-between mx-8">
-                <h3 class="font-semibold text-white">${ucapan.nama}</h3>
-                <span class="text-sm text-white italic">
+                <h3 class="font-semibold text-[#8D1F22]">${ucapan.nama}</h3>
+                <span class="text-sm text-[#8D1F22] italic">
                     ${
                       ucapan.kehadiran === "Hadir"
                         ? "Hadir"

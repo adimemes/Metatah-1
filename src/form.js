@@ -68,8 +68,8 @@ function renderMessages() {
           <div class="bg-black/40 border border-white/20 rounded-xl p-6 backdrop-blur-sm mb-4 transition-all">
             <div class="space-y-2">
                 <div class="flex items-center justify-between mx-8">
-                    <h3 class="font-semibold text-white">${msg.name}</h3>
-                    <span class="text-sm text-white italic">
+                    <h3 class="font-semibold text-[#8D1F22]">${msg.name}</h3>
+                    <span class="text-sm text-[#8D1F22] italic">
                         ${
                           msg.attendance === "Hadir"
                             ? "Hadir"
