@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         bonheur: ['"Bonheur Royale"', "cursive"], // Font Bonheur Royale
-        lexend: ['"Lexend"', "sans-serif"], // Font Lexend
+        lexend: ['"Lexend"', "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"], // Font Lexend
       },
     },
   },

@@ -9,7 +9,7 @@
     <script src="./node_modules/preline/dist/preline.js"></script>
 
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Lexend:wght@400;500;700&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Lexend&family=Montserrat:wght@400;500;700&display=swap">
 </head>
 
 <body class=" scroll-smooth">
@@ -44,7 +44,7 @@
     <!-- Pembuka End -->
 
     <!-- Section Nama -->
-    <section class="bg-[#E2E2E2] pb-10">
+    <section class="bg-[#E2E2E2]">
         <div class="container mx-auto px-4 py-12 flex flex-col items-center">
             <div class="relative">
                 <img src="Asset/vector/bunga bg.svg"
@@ -109,13 +109,144 @@
                     </div>
                     <!-- orang tua end -->
                 </div>
-                <div class="absolute -bottom-0 left-0 w-full">
-                    <img src="Asset/batasan_merah.png" alt="batasan" class="w-full">
-                </div>
+            </div>
+        </div>
+        <div class="relative mt-4">
+            <!-- Gambar untuk Mobile -->
+            <div class="absolute bottom-0 left-0 w-full block md:hidden z-0">
+                <img src="Asset/batasan_merah.png" alt="batasan" class="w-full">
+            </div>
+            <!-- Gambar untuk Desktop -->
+            <div class="absolute bottom-0 left-0 w-full hidden md:block z-0">
+                <img src="Asset/merah.png" alt="merah" class="w-full">
             </div>
         </div>
     </section>
     <!-- Section Nama End -->
+
+    <!-- Tanggal dan Waktu -->
+    <section class="bg-[#4D1018] pb-20 md:pb-40">
+        <div class="flex flex-col justify-center">
+            <div class="relative">
+                <img src="Asset/vector/bunga bg hitam.svg"
+                    class="md:scale-x-125 absolute -top-6 md:top-10 left-1/2 -translate-x-1/2 w-[419px] h-[592px] md:w-[592px] md:h-[837px]">
+            </div>
+            <!-- Judul -->
+            <h1 class="text-[48px] md:text-[96px] text-center font-bonheur text-white mb-10">
+                Waktu & Tempat
+            </h1>
+
+            <!-- Container utama -->
+            <div class="mx-4 md:mx-auto font-montserrat" style="max-width: 32rem;">
+                <div class="bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl p-6 shadow-lg w-full">
+                    <div class="flex" id="date-section">
+                        <!-- Bagian Tanggal - Kiri -->
+                        <div class="text-white pr-5 md:pr-12 font-bold">
+                            <span class="text-5xl md:text-[100px] mt-7 md:mt-0 font-bold block"
+                                id="day-counter">01</span>
+                            <span class="text-xl md:text-[40px] mt-3 md:mb-4 text-center uppercase font-medium block"
+                                data-aos="zoom-in">NOV</span>
+                            <span class="text-xl md:text-[40px] text-center font-light block"
+                                data-aos="zoom-in">2024</span>
+                        </div>
+
+                        <!-- Bagian Detail - Kanan -->
+                        <div class="flex-1">
+                            <h3 class=" text-[24px] md:text-[40px] italic font-semibold text-white mb-4"
+                                data-aos="zoom-in">Resepsi</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-start gap-2" data-aos="zoom-in">
+                                    <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 13C20 17.4183 16.4183 21 12 21C7.58172 21 4 17.4183 4 13C4 8.58172 7.58172 5 12 5C16.4183 5 20 8.58172 20 13Z"
+                                            stroke="white" stroke-width="1.5" stroke-linejoin="round"></path>
+                                        <path d="M12 9V13L15 16" stroke="white" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <span class="text-sm text-white/80">16.00 WITA-SELESAI</span>
+                                </div>
+                                <div class="flex items-start gap-2" data-aos="zoom-in">
+                                    <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.81207 6.05324C9.53921 2.87158 14.4614 2.87158 17.1885 6.05324C19.382 8.61225 19.382 12.3884 17.1885 14.9474L13.0785 19.7424C12.7864 20.0831 12.6404 20.2535 12.4797 20.3413C12.1809 20.5045 11.8197 20.5045 11.5209 20.3413C11.3602 20.2535 11.2142 20.0831 10.9221 19.7424L6.81207 14.9474C4.61863 12.3884 4.61863 8.61225 6.81207 6.05324Z"
+                                            stroke="white" stroke-width="1.5"></path>
+                                        <path
+                                            d="M14 10C14 11.1046 13.1046 12 12 12C10.8954 12 10 11.1046 10 10C10 8.89543 10.8954 8 12 8C13.1046 8 14 8.89543 14 10Z"
+                                            stroke="white" stroke-width="1.5"></path>
+                                    </svg>
+                                    <span class="text-sm text-white/80">Puri Gerenceng Pemecutan, Jalan Sutomo, Denpasar
+                                        Utara, Bali</span>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="mt-6 inline-block rounded-full bg-[#300A17] px-8 py-2 md:px-[72px] text-center text-sm font-medium text-white hover:bg-gold hover:ring-1 hover:ring-brown focus:outline-none focus:ring active:text-brown w-full md:w-auto"
+                                data-aos="zoom-in">
+                                Buka Lokasi
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catatan Tambahan -->
+            <div class="mt-10 text-center w-full px-4 mb-8 md:mb-14 font-montserrat">
+                <p class="text-xs md:text-xs md:font-semibold text-white" data-aos="zoom-in">
+                    Merupakan suatu kebahagiaan dan kehormatan bagi kami apabila Bapak/ Ibu/ Saudara/i berkenan hadir
+                    untuk memberikan doa restu.
+                </p>
+                <p class="mt-4 text-xs md:text-xs md:font-semibold text-white">Kami yang berbahagia</p>
+                <p class="text-[14px] md:text-[14px] font-bold text-white mt-4" data-aos="zoom-in">
+                    Kel. Kadek Adi Memes & Rika Utami <br> ASTUNGKARA
+                </p>
+                <h1 class="mt-5 text-[24px] md:text-[48px] font-medium  text-white font-bonheur">Om Shanti Shanti Shanti
+                    Om</h1>
+            </div>
+            <div class="relative flex flex-col items-center">
+                <div class=" absolute w-[103px] md:w-[130px] -bottom-20">
+                    <img src="Asset/vector/bunga kecil putih.svg" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tanggal dan Waktu End -->
+
+    <!-- Countdown -->
+    <section class="bg-[#4D1018] relative min-h-screen flex flex-col items-center justify-start">
+        <div data-aos="zoom-in">
+            <h1 class="text-[48px] md:text-[96px] text-center font-bonheur text-white mb-10">
+                Hari Bahagia
+            </h1>
+        </div>
+        <!-- Countdown -->
+        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                </span>
+                days
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                </span>
+                hours
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                </span>
+                min
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                    <span style="--value:${counter};"></span>
+                </span>
+                sec
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
