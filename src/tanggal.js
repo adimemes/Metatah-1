@@ -1,46 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const dateSection = document.getElementById("date-section"); // Section tanggal
-    const dayCounter = document.getElementById("day-counter"); // Elemen angka tanggal
+  const dateSection = document.getElementById("date-section");
+  const dayCounter = document.getElementById("day-counter");
   
-    // Fungsi untuk menjalankan animasi counter
-    function startCounter() {
-      let counter = 1; // Mulai dari angka 1
-      const target = 25; // Angka tujuan (06)
-      const interval = 100; // Waktu antar perubahan angka
+  // Variable untuk tracking animasi di level global
+  let hasAnimated = false;
   
-      // Set interval untuk update angka
+  function startCounter() {
+      let counter = 1;
+      const target = 25;
+      const interval = 100;
+      
       const countUp = setInterval(() => {
-        if (counter <= target) {
-          dayCounter.textContent = counter < 10 ? `0${counter}` : counter; // Format dua digit
-          counter++;
-        } else {
-          clearInterval(countUp); // Hentikan animasi jika sudah selesai
-        }
-      }, interval);
-    }
-  
-    let hasAnimated = false; // Flag untuk memastikan animasi hanya dilakukan sekali
-  
-    // Intersection Observer untuk memantau elemen
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          dateSection.classList.add("visible"); // Menambahkan animasi fade-in
-  
-          // Jika animasi belum pernah dijalankan, jalankan animasi
-          if (!hasAnimated) {
-            hasAnimated = true;
-            startCounter(); // Mulai animasi counter
+          if (counter <= target) {
+              dayCounter.textContent = counter < 10 ? `0${counter}` : counter;
+              counter++;
+          } else {
+              clearInterval(countUp);
           }
-        } else {
-          // Reset flag saat elemen keluar dari viewport
-          hasAnimated = false;
-          dayCounter.textContent = "01"; // Reset tanggal ke angka awal
-          dateSection.classList.remove("visible"); // Menghilangkan animasi fade-in
-        }
-      });
-    });
+      }, interval);
+  }
   
-    // Pantau elemen date-counter
-    observer.observe(dateSection);
+  // Intersection Observer untuk memantau elemen
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+              // Hanya jalankan jika belum pernah dianimasikan
+              dateSection.classList.add("visible");
+              startCounter();
+              hasAnimated = true; // Set flag menjadi true dan tidak akan pernah direset
+              
+              // Optional: Disconnect observer karena kita tidak perlu memantau lagi
+              observer.disconnect();
+          } else if (!entry.isIntersecting) {
+              // Hanya remove class visible, tapi tidak reset hasAnimated
+              dateSection.classList.remove("visible");
+          }
+      });
+  }, {
+      // Opsi tambahan untuk mengontrol kapan observer trigger
+      threshold: 0.5 // Trigger ketika 50% elemen terlihat
   });
+  
+  // Mulai memantau elemen
+  observer.observe(dateSection);
+});

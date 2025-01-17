@@ -10,6 +10,8 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Lexend&family=Montserrat:wght@400;500;700&display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="overflow-hidden scroll-smooth">
@@ -27,8 +29,8 @@
                         class="ml-16 -mt-6 text-8xl font-bonheur text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">
                         Metatah</h1>
                     <p class="text-lg mt-5 font-lexend text-white">selasa, 28 Maret 2025</p>
-                    <h4 class="font-lexend mt-2 text-white"> Kepada <br> <span
-                            id="guest-name" class = "font-lexend font-semibold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
+                    <h4 class="font-lexend mt-2 text-white"> Kepada <br> <span id="guest-name"
+                            class="font-lexend font-semibold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"></span>
                     </h4>
                     <button id="openBtn"
                         class="mt-5 flex font-lexend items-center justify-center gap-2 rounded-full bg-[#1B0615] bg-opacity-60 px-6 py-3 text-center text-sm text-white ring-1 ring-white focus:outline-none active:text-brown">
@@ -36,8 +38,8 @@
                     </button>
                 </div>
             </div>
-            <div class="absolute bottom-0 left-0 w-full">
-                <img src="Asset/batasan.png" alt="batasan" class="w-full">
+            <div class="absolute bottom-[-1px] left-0 w-full">
+                <img src="Asset/batasan.png" alt="batasan" class="w-full block p-0 m-0">
             </div>
         </div>
     </section>
@@ -45,17 +47,17 @@
 
     <!-- Section Nama -->
     <section class="bg-[#E2E2E2]" id="nextSection">
-        <div class="container mx-auto px-4 py-12 flex flex-col items-center">
+        <div class="container mx-auto px-4 py-12 flex flex-col items-center overflow-hidden">
             <div class="relative">
                 <img src="Asset/vector/bunga bg.svg"
                     class="md:scale-x-125 absolute top-10 md:top-20  left-1/2 -translate-x-1/2 w-[343px] h-[487px] md:w-[592px] md:h-[837px]">
                 <div class="relative z-10">
                     <div class="mt-10">
-                        <h1 class="text-[48px] md:text-[96px] text-center font-bonheur text-[#300A17] font-normal">
+                        <h1 class="text-[48px] md:text-[96px] text-center font-bonheur text-[#300A17] font-normal" data-aos="zoom-in">
                             Om
                             Swastyastu
                         </h1>
-                        <p class="mt-3 text-[12px] md:text-[16px] text-center font-lexend text-[#313131] font-normal">
+                        <p class="mt-3 text-[12px] md:text-[16px] text-center font-lexend text-[#313131] font-normal" data-aos="zoom-in">
                             Atas
                             Asung
                             Kertha Wara
@@ -67,7 +69,7 @@
                     </div>
 
                     <!-- Nama Yang Metatah -->
-                    <div class="mt-9">
+                    <div class="mt-9" data-aos="fade-up" data-aos-delay="500">
                         <h1 class="text-[24px] md:text-[48px] text-center font-bonheur text-[#300A17] font-semibold ">
                             A.
                             A.
@@ -93,7 +95,7 @@
                     <!-- End Nama -->
 
                     <!-- Orang Tua -->
-                    <div class="mt-10 flex flex-col items-center">
+                    <div class="mt-10 flex flex-col items-center" data-aos="fade-up" data-aos-delay="500">
                         <p class="text-[16px] text-center font-lexend text-[#313131] font-normal">Putra & Putri dari
                             pasangan
                         </p>
@@ -113,12 +115,12 @@
         </div>
         <div class="relative mt-4">
             <!-- Gambar untuk Mobile -->
-            <div class="absolute bottom-0 left-0 w-full block md:hidden">
-                <img src="Asset/batasan_merah.png" alt="batasan" class="w-full">
+            <div class="absolute  bottom-[-1px] left-0 w-full block md:hidden">
+                <img src="Asset/batasan_merah.png" alt="batasan" class="w-full overflow-hidden">
             </div>
             <!-- Gambar untuk Desktop -->
-            <div class="absolute bottom-0 left-0 w-full md:block z-0">
-                <img src="Asset/merah.png" alt="merah" class="w-full">
+            <div class="absolute bottom-[-1px] left-0 w-full md:block z-0">
+                <img src="Asset/merah.png" alt="merah" class="w-full overflow-hidden">
             </div>
         </div>
     </section>
@@ -126,36 +128,34 @@
 
     <!-- Tanggal dan Waktu -->
     <section class="bg-gradient-to-b from-[#4D1018] from-0% via-100% to-[#511617] to-94% pb-24">
-        <div class="flex flex-col justify-center">
+        <div class="flex flex-col justify-center  ">
             <div class="relative">
                 <img src="Asset/vector/bunga bg hitam.svg"
                     class="md:scale-x-125 absolute -top-6 md:top-10 left-1/2 -translate-x-1/2 w-[419px] h-[592px] md:w-[592px] md:h-[837px]">
             </div>
             <!-- Judul -->
-            <h1 class="text-[48px] md:text-[96px] text-center font-bonheur text-white mb-10">
+            <h1 class="text-[48px] md:text-[96px] text-center font-bonheur text-white mb-10" data-aos="zoom-in">
                 Waktu & Tempat
             </h1>
 
             <!-- Container utama -->
             <div class="mx-4 md:mx-auto font-montserrat" style="max-width: 32rem;">
-                <div class="bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl p-6 shadow-lg w-full">
+                <div class="bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl p-6 shadow-lg w-full" data-aos="zoom-in">
                     <div class="flex" id="date-section">
-                        <!-- Bagian Tanggal - Kiri -->
                         <div class="text-white pr-5 md:pr-12 font-bold">
                             <span class="text-5xl md:text-[100px] mt-7 md:mt-0 font-bold block"
                                 id="day-counter">01</span>
                             <span class="text-xl md:text-[40px] mt-3 md:mb-4 text-center uppercase font-medium block"
-                                data-aos="zoom-in">NOV</span>
+                            >NOV</span>
                             <span class="text-xl md:text-[40px] text-center font-light block"
-                                data-aos="zoom-in">2024</span>
+                            >2024</span>
                         </div>
 
-                        <!-- Bagian Detail - Kanan -->
                         <div class="flex-1">
                             <h3 class=" text-[24px] md:text-[40px] italic font-semibold text-white mb-4"
-                                data-aos="zoom-in">Resepsi</h3>
+                            >Resepsi</h3>
                             <div class="space-y-3">
-                                <div class="flex items-start gap-2" data-aos="zoom-in">
+                                <div class="flex items-start gap-2">
                                     <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -166,7 +166,7 @@
                                     </svg>
                                     <span class="text-sm text-white/80">16.00 WITA-SELESAI</span>
                                 </div>
-                                <div class="flex items-start gap-2" data-aos="zoom-in">
+                                <div class="flex items-start gap-2">
                                     <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -180,7 +180,7 @@
                                         Utara, Bali</span>
                                 </div>
                             </div>
-                            <a href="#"
+                            <a href="https://maps.app.goo.gl/v33YBPGHYwW1ZaWc7" target="_blank"
                                 class="mt-6 inline-block rounded-full bg-[#300A17] px-8 py-2 md:px-[72px] text-center text-sm font-medium text-white hover:bg-gold hover:ring-1 hover:ring-brown focus:outline-none focus:ring active:text-brown w-full md:w-auto">
                                 Buka Lokasi
                             </a>
@@ -190,13 +190,13 @@
             </div>
 
             <!-- Catatan Tambahan -->
-            <div class="mt-10 text-center w-full px-4 mb-8 md:mb-14 font-montserrat">
-                <p class="text-xs md:text-xs md:font-semibold text-white" data-aos="zoom-in">
+            <div class="mt-10 text-center w-full px-4 mb-8 md:mb-14 font-montserrat overflow-hidden" data-aos="zoom-in">
+                <p class="text-xs md:text-xs md:font-semibold text-white">
                     Merupakan suatu kebahagiaan dan kehormatan bagi kami apabila Bapak/ Ibu/ Saudara/i berkenan hadir
                     untuk memberikan doa restu.
                 </p>
                 <p class="mt-4 text-xs md:text-xs md:font-semibold text-white">Kami yang berbahagia</p>
-                <p class="text-[14px] md:text-[14px] font-bold text-white mt-4" data-aos="zoom-in">
+                <p class="text-[14px] md:text-[14px] font-bold text-white mt-4">
                     Kel. Kadek Adi Memes & Rika Utami <br> ASTUNGKARA
                 </p>
                 <h1 class="mt-5 text-[24px] md:text-[48px] font-medium  text-white font-bonheur">Om Shanti Shanti Shanti
@@ -204,7 +204,7 @@
             </div>
             <div class="relative flex flex-col items-center">
                 <div class=" absolute w-[103px] md:w-[130px] -bottom-20">
-                    <img src="Asset/vector/bunga kecil putih.svg" class="w-full h-auto">
+                    <img src="Asset/vector/bunga kecil putih.svg" class="w-full h-auto" style="margin-bottom: -1px;">
                 </div>
             </div>
         </div>
@@ -213,8 +213,8 @@
 
     <!-- Countdown -->
     <section
-        class="bg-gradient-to-b from-[#521617] from-0% via-100% to-black to-94% min-h-screen flex flex-col items-center justify-center">
-        <div class="w-full max-w-4xl" data-aos="zoom-in">
+        class="bg-gradient-to-b from-[#521617] from-0% via-100% to-black to-94% min-h-screen flex flex-col items-center justify-center pt-10 -mt-px">
+        <div class="w-full max-w-4xl" data-aos="zoom-in ">
             <h1 class="text-[48px] md:text-[96px] text-center font-bonheur text-white mb-10">
                 Hari Bahagia
             </h1>
@@ -222,7 +222,7 @@
                 <img src="Asset/vector/bunga bg merahsvg.svg"
                     class="md:scale-x-125 absolute -top-6 md:-top-18 left-1/2 -translate-x-1/2 w-[419px] h-[592px] md:w-[592px] md:h-[837px]">
             </div>
-            <div class="w-full flex justify-center font-montserrat">
+            <div class="w-full flex justify-center font-montserrat" data-aos="fade-up" data-aos-delay="200">
                 <div class="grid grid-cols-4 gap-4 md:gap-8 lg:gap-12">
                     <!-- Hari -->
                     <div
@@ -261,7 +261,7 @@
                 Restu</h1>
         </div>
         <div
-            class="bg-white/10 border border-white/20 rounded-xl p-6 shadow-lg font-montserrat mx-4 md:mx-auto md:w-1/2 z-10">
+            class="bg-white/10 border border-white/20 rounded-xl p-6 shadow-lg font-montserrat mx-4 md:mx-auto md:w-1/2 z-10" data-aos="fade-up" data-aos-delay="300">
             <form id="formUcapan" class="space-y-6">
                 <!-- Input Nama -->
                 <div>
@@ -307,7 +307,7 @@
             </form>
         </div>
 
-        <div class="mt-8 max-w-xl mx-9 p-6 container">
+        <div class="mt-8 max-w-xl mx-9 p-6 container" data-aos="zoom-in">
             <h2 class="text-center text-[48px] md:text-[96px] mb-6 font-bonheur text-white">Ucapan Doa</h2>
             <div id="listUcapan" class="space-y-4 max-h-[400px] overflow-y-auto">
                 <!-- Ucapan akan ditambahkan di sini -->
@@ -315,7 +315,7 @@
         </div>
 
         <!-- Footer -->
-        <div class="mt-5 max-w-xl mx-9 p-6 container">
+        <div class="mt-5 max-w-xl mx-9 p-6 container" data-aos="zoom-in">
             <h2 class="text-center text-[48px] md:text-[96px] mb-6 font-bonheur text-white">Matur Suksma</h2>
         </div>
         <div class="text-center" data-aos="zoom-in">
